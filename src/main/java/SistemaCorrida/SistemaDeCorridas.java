@@ -104,5 +104,8 @@ public class SistemaDeCorridas {
 
     public void cadastraCorrida(CadastraCorrida corrida) {
     }
+
+    public ThreadLocal<Object> getCorridas() {
+    }
 }
 

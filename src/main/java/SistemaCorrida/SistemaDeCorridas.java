@@ -1,6 +1,7 @@
 package SistemaCorrida;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -106,6 +107,24 @@ public class SistemaDeCorridas {
     }
 
     public ThreadLocal<Object> getCorridas() {
+        return null;
     }
-}
 
+    public void cadastrarCorrida(String nome, String cidade, String data, String horario, double distancia) {
+    }
+
+    public List<CadastraCorrida> pesquisarCorridaPorCidade(String cidade) {
+        return null;
+    }
+
+    public boolean removerCorrida(String nome) {
+        CadastraCorrida corrida = corridas.get(nome);
+        if (corrida != null) {
+            corridas.remove(nome);  // Remove a corrida do mapa
+            return true;
+        } else {
+            return false;  // Caso a corrida não exista
+        }
+    }
+
+}
